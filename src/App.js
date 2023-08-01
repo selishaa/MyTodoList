@@ -7,9 +7,7 @@ import React, {useState} from 'react';
 
 
 function App() {
-  setTodos(todos.filter((e)=>{
-    return e!==todo;
-  }))
+
 
   const [todos, setTodos] = useState([ 
      {
@@ -31,6 +29,9 @@ function App() {
   
   const onDelete = (todo)=>{
     console.log("I am ondelete", todo);
+    setTodos(todos.filter((e)=>{
+      return e!==todo;
+    }))
     
 
   }

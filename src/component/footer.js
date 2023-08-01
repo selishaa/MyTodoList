@@ -1,17 +1,24 @@
 import React from 'react'
 
-const footer = () => {
+ export const footer = () => {
+  let footerStyle = {
+    position: "absolute",
+    top: "100vh",
+    width: "100%",
+  }
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
-  <div className="container-fluid">
+   
+  <div className="bg-dark text-light" style={footerStyle}>
+    <p className='text-center'>
+    Copyright &copy; MyTodoList.com
+    </p>
+   
 
-      <form className="d-flex" role="search">
-       
-        <button className="btn btn-outline-success" type="submit">Search</button>
-      </form>
+  
+     
     </div>
 
-</nav>
+
   )
 }
 
