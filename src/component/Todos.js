@@ -6,7 +6,7 @@ const Todos = (props) => {
     <div className='container'> 
     <h3 className='text-center my-3'>My Todos List</h3> 
   {props.todos.map((todo)=>{
-    return  <Todoitem todo={todo} onDelete={props.onDelete}/>
+    return  <Todoitem todo={todo} key={todo.sno}onDelete={props.onDelete}/>
   })}
      
      
